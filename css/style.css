@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Secular+One&display=swap');
+
+body {
+    background-image: url(../images/tim3.jpg);
+    background-size: cover;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: #0d1d279e;
+    border: 1em solid #8a8038;
+    background-size: cover;
+    animation: visibility 1s ease 1;
+    animation-fill-mode: forwards;
+    animation-delay: 30s;
+
+}
+
+@keyframes visibility {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.center {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #9c5416;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.minute-arm {
+    position: absolute;
+    width: 4px;
+    height: 35%;
+    background: #da3333;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: bottom;
+    animation: rotation 15s linear 2;
+}
+
+.hour-arm {
+    position: absolute;
+    width: 4px;
+    height: 25%;
+    background: #da3333;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: bottom;
+    transform: rotate(345deg)
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.clock .text h3 {
+    font-family: 'oswald';
+    text-transform: uppercase;
+    position: absolute;
+    color: #bbc51d;
+}
+
+
+.text h3:nth-child(1),
+.text h3:nth-child(2),
+.text h3:nth-child(3),
+.text h3:nth-child(4),
+.text h3:nth-child(5),
+.text h3:nth-child(6),
+.text h3:nth-child(7),
+.text h3:nth-child(8),
+.text h3:nth-child(9),
+.text h3:nth-child(10),
+.text h3:nth-child(11),
+.text h3:nth-child(12) {
+    font-family: 'Secular One',
+        sans-serif;
+    animation: textFade1 1s ease 0.01s;
+    animation-fill-mode: forwards;
+}
+
+.text h3:nth-child(13),
+.text h3:nth-child(14),
+.text h3:nth-child(15),
+.text h3:nth-child(16),
+.text h3:nth-child(17),
+.text h3:nth-child(18),
+.text h3:nth-child(19),
+.text h3:nth-child(20),
+.text h3:nth-child(21),
+.text h3:nth-child(22),
+.text h3:nth-child(23),
+.text h3:nth-child(24) {
+    font-family: 'Righteous',
+        cursive;
+    animation: textFade2 1s ease 0.01s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+
+
+
+
+.text h3:nth-child(1),
+.text h3:nth-child(13) {
+    top: -8%;
+    left: 50%;
+    transform: translateX(-50%) translateY(5%);
+    font-size: 1.5em;
+}
+
+.text h3:nth-child(1) {
+    animation-delay: 14s;
+}
+
+.text h3:nth-child(13) {
+    animation-delay: 15s;
+}
+
+
+.text h3:nth-child(2),
+.text h3:nth-child(14) {
+    left: 70%;
+    top: 5%;
+    transform: translateX(-70%) rotate(-55deg) translateY(-5%);
+
+}
+
+.text h3:nth-child(2) {
+    animation-delay: 1.2s;
+}
+
+.text h3:nth-child(14) {
+    animation-delay: 16.2s;
+}
+
+.text h3:nth-child(3),
+.text h3:nth-child(15) {
+    left: 89%;
+    top: 23%;
+    transform: translateX(-89%) rotate(-25deg) translateY(-23%);
+}
+
+.text h3:nth-child(3) {
+    animation-delay: 2.4s
+}
+
+.text h3:nth-child(15) {
+    animation-delay: 17.4s
+}
+
+.text h3:nth-child(4),
+.text h3:nth-child(16) {
+    left: 96%;
+    top: 41%;
+    transform: translateX(-96%) rotate(0deg) translateY(-41%);
+}
+
+.text h3:nth-child(4) {
+    animation-delay: 3.6s
+}
+
+.text h3:nth-child(16) {
+    animation-delay: 18.6s
+}
+
+
+
+.text h3:nth-child(5),
+.text h3:nth-child(17) {
+    left: 90%;
+    top: 60%;
+    transform: translateX(-90%) rotate(30deg) translateY(-60%);
+
+}
+
+.text h3:nth-child(5) {
+    animation-delay: 4.8s
+}
+
+.text h3:nth-child(17) {
+    animation-delay: 19.8s
+}
+
+
+.text h3:nth-child(6),
+.text h3:nth-child(18) {
+    left: 71%;
+    top: 79%;
+    transform: translateX(-71%) rotate(60deg) translateY(-79%);
+
+}
+
+.text h3:nth-child(6) {
+    animation-delay: 6s
+}
+
+.text h3:nth-child(18) {
+    animation-delay: 21s
+}
+
+
+.text h3:nth-child(7),
+.text h3:nth-child(19) {
+    left: 47%;
+    top: 80%;
+    transform: translateX(-47%) rotate(88deg) translateY(-80%);
+
+}
+
+.text h3:nth-child(7) {
+    animation-delay: 7.2s
+}
+
+.text h3:nth-child(19) {
+    animation-delay: 22.2s
+}
+
+
+.text h3:nth-child(8),
+.text h3:nth-child(20) {
+    left: 28%;
+    top: 78%;
+    transform: translateX(-28%) rotate(-55deg) translateY(-78%);
+
+}
+
+.text h3:nth-child(8) {
+    animation-delay: 8.8s;
+}
+
+.text h3:nth-child(20) {
+    animation-delay: 23.8s;
+}
+
+
+.text h3:nth-child(9),
+.text h3:nth-child(21) {
+    left: 10%;
+    top: 61%;
+    transform: translateX(-10%) rotate(-25deg) translateY(-61%);
+}
+
+.text h3:nth-child(9) {
+    animation-delay: 10.4s
+}
+
+.text h3:nth-child(21) {
+    animation-delay: 25.4s
+}
+
+
+.text h3:nth-child(10),
+.text h3:nth-child(22) {
+    left: 3%;
+    top: 41%;
+    transform: translateX(-3%) rotate(0deg) translateY(-41%);
+}
+
+.text h3:nth-child(10) {
+    animation-delay: 11.4s;
+}
+
+.text h3:nth-child(22) {
+    animation-delay: 26.4s;
+}
+
+
+.text h3:nth-child(11),
+.text h3:nth-child(23) {
+    left: 11%;
+    top: 21%;
+    transform: translateX(-11%) rotate(30deg) translateY(-21%);
+}
+
+.text h3:nth-child(11) {
+    animation-delay: 12.6s
+}
+
+.text h3:nth-child(23) {
+    animation-delay: 27.6s;
+}
+
+
+
+
+.text h3:nth-child(12),
+.text h3:nth-child(24) {
+    left: 29%;
+    top: 8%;
+    transform: translateX(-29%) rotate(60deg) translateY(-8%);
+}
+
+.text h3:nth-child(12) {
+    animation-delay: 13.6s;
+}
+
+.text h3:nth-child(24) {
+    animation-delay: 28.6s;
+}
+
+@keyframes textFade1 {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes textFade2 {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.content h2 {
+    font-family: 'raleway', Arial, Helvetica, sans-serif;
+    line-height: 2em;
+    color: #302b24;
+    animation: text 1s ease 4;
+    animation-fill-mode: forwards;
+    animation-delay: 31s;
+    opacity: 0;
+}
+
+@keyframes text {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+
+.clock-footer {
+    font-family: 'Righteous',
+        cursive;
+    font-weight: 600;
+    color: gray;
+    text-align: center;
+    padding: 4% 0;
+    letter-spacing: 1.5px;
+}
