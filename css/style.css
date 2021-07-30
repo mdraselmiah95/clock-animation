@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Secular+One&display=swap');
 
 body {
-    background-image: url(../images/tim3.jpg);
+    background-image: url(../images/time.jpg);
     background-size: cover;
 }
+
+/* main css */
 
 .container {
     width: 400px;
@@ -22,7 +24,7 @@ body {
     background: #0d1d279e;
     border: 1em solid #8a8038;
     background-size: cover;
-    animation: visibility 1s ease 1;
+    animation: visibility 5s ease;
     animation-fill-mode: forwards;
     animation-delay: 30s;
 
@@ -43,7 +45,7 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #9c5416;
+    background: #da3333;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -129,10 +131,6 @@ body {
     animation-fill-mode: forwards;
     opacity: 0;
 }
-
-
-
-
 
 .text h3:nth-child(1),
 .text h3:nth-child(13) {
@@ -372,6 +370,7 @@ body {
     }
 }
 
+/* footer section */
 
 .clock-footer {
     font-family: 'Righteous',
